@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include "designs/head.html" %}
+    <title>Predict Anemia</title>
+  </head>
+  <!-- body -->
+  <body class="main-layout inner_page">
+    {% include "designs/mid.html" %}
+    <!-- contact -->
+    <div class="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="titlepage text_align_left">
+              <center>
+                <h2>{{msg}}</h2>
+              </center>
+
+              <h2>Enter Details</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <form id="request" method="post" autocomplete="off" name="frm">
+              <div class="row">
+                <div class="col-md-12">
+                  <label for=""></label>
+                  <label for="gender">Gender</label>
+                  <select autofocus="on" class="form-control" name="gender">
+                    <option value="">Select Gender</option>
+                    <option value="0">Male</option>
+                    <option value="1">Female</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label for="Age">Age</label>
+
+                  <input
+                    class="form-control mb-2"
+                    placeholder="Age"
+                    type="number"
+                    name="Age"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="rbccount">RBC Count</label>
+                  <input
+                    class="form-control mb-2"
+                    placeholder="RBC Count"
+                    type="number"
+                    name="rbccount"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="pcv">PCV count</label>
+                  <input
+                    class="form-control mb-2"
+                    placeholder="PCV count"
+                    type="number"
+                    name="pcv"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="mcv">MCV count</label>
+                  <input
+                    class="form-control mb-2"
+                    placeholder="MCV count"
+                    type="number"
+                    name="mcv"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="mch">MCH Count</label>
+                  <input
+                    class="form-control mb-2"
+                    placeholder="MCH Count"
+                    type="number"
+                    name="mch"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="mchc">MCHC Count</label>
+                  <input
+                    class="form-control mb-2"
+                    placeholder="MCHC Count"
+                    type="number"
+                    name="mchc"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="rdwc">RDW Count</label>
+                  <input
+                    class="form-control mb-2"
+                    placeholder="RDW Count"
+                    type="number"
+                    name="rdwc"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="tlc">TLC Count</label>
+                  <input
+                    class="form-control mb-2"
+                    placeholder="TLC Count"
+                    type="number"
+                    name="tlc"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="plt">Platelets volume</label>
+                  <input
+                    class="form-control mb-2"
+                    placeholder="Platelets volume"
+                    type="number"
+                    name="plt"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="hgb">Heamoglobin</label>
+                  <input
+                    class="form-control mb-2"
+                    placeholder="Heamoglobin"
+                    type="number"
+                    name="hgb"
+                  />
+                </div>
+
+                <div class="col-md-12">
+                  <center>
+                    <button class="btn btn-success" type="submit">
+                      Detect
+                    </button>
+                    <button class="btn btn-warning" type="reset">Reset</button>
+                  </center>
+                </div>
+              </div>
+              {% csrf_token %}
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end contact -->
+    {% include "designs/last.html" %}
+  </body>
+</html>

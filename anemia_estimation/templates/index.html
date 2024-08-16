@@ -1,0 +1,305 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include "designs/head.html" %}
+    <title>Anemia Awareness</title>
+  </head>
+  <body class="main-layout">
+    {% include "designs/mid.html" %}
+    <div class="full_bg">
+      <!-- header inner -->
+      <div class="section">
+        <!-- carousel code -->
+        <div id="banner1" class="carousel slide slider_main">
+          <ol class="carousel-indicators">
+            <li data-target="#banner1" data-slide-to="0" class="indicator-li-1">
+              01
+            </li>
+            <li data-target="#banner1" data-slide-to="1" class="">02</li>
+            <li data-target="#banner1" data-slide-to="2" class="active">03</li>
+          </ol>
+          <div class="carousel-inner">
+            <!-- first slide -->
+            <div class="carousel-item active">
+              <div class="carousel-caption cuplle">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-8">
+                      <div class="photog">
+                        <h1>Understanding<br />Anemia</h1>
+                        <a class="read_more" href="javascript:void(0)"
+                          >Read More</a
+                        >
+                        <a class="read_more" href="{% url 'about' %}"
+                          >About Anemia</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- second slide -->
+            <div class="carousel-item">
+              <div class="carousel-caption cuplle">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-8">
+                      <div class="photog">
+                        <h1>Understanding<br />Anemia</h1>
+                        <a class="read_more" href="javascript:void(0)"
+                          >Read More</a
+                        >
+                        <a class="read_more" href="{% url 'about' %}"
+                          >About Anemia</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- third slide -->
+            <div class="carousel-item">
+              <div class="carousel-caption cuplle">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-8">
+                      <div class="photog">
+                        <h1>Understanding<br />Anemia</h1>
+                        <a class="read_more" href="javascript:void(0)"
+                          >Read More</a
+                        >
+                        <a class="read_more" href="{% url 'about' %}"
+                          >About Anemia</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- controls -->
+          <a
+            class="carousel-control-prev"
+            href="#banner1"
+            role="button"
+            data-slide="prev"
+          >
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#banner1"
+            role="button"
+            data-slide="next"
+          >
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- end banner -->
+    <!-- about -->
+    <div class="about">
+      <div class="container_width">
+        <div class="row d_flex">
+          <div class="col-md-7">
+            <div class="titlepage text_align_left">
+              <h2>About Anemia</h2>
+              <p>
+                Anemia is a condition characterized by a lack of healthy red
+                blood cells or hemoglobin, which impairs the body’s ability to
+                transport oxygen to tissues. Symptoms include fatigue, weakness,
+                and shortness of breath.
+              </p>
+              <a
+                class="read_more"
+                href="https://www.who.int/health-topics/anaemia#tab=tab_1"
+                target="_blank"
+                >Learn More</a
+              >
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="about_img text_align_center">
+              <figure>
+                <img
+                  src="{% static 'images/anemia-info.png' %}"
+                  alt="Anemia Awareness"
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end about -->
+    <!-- Symptoms of Anemia -->
+    <div class="coronata">
+      <div class="container">
+        <div class="row d_flex grid">
+          <div class="col-md-7">
+            <div class="coronata_img text_align_center">
+              <figure>
+                <img
+                  src="{% static 'images/anemia_info.png' %}"
+                  alt="Anemia Symptoms"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="col-md-5 oder1">
+            <div class="titlepage text_align_left">
+              <h2>Symptoms of Anemia</h2>
+              <p>
+                Anemia manifests through various symptoms, which can vary in
+                severity. Identifying these symptoms early can be crucial for
+                effective management and treatment. Common symptoms include:
+              </p>
+              <ul style="margin-bottom: 20px">
+                <li>Persistent fatigue and weakness</li>
+                <li>Unusual paleness of the skin</li>
+                <li>Breathlessness or rapid heartbeat</li>
+                <li>Frequent dizziness or lightheadedness</li>
+                <li>Cold or numb extremities</li>
+                <li>Frequent headaches</li>
+                <li>Chest pain or angina</li>
+                <li>Brittle or spoon-shaped nails</li>
+                <li>Restless legs syndrome</li>
+              </ul>
+              <a class="read_more" href="{% url 'symptoms' %}">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end symptoms -->
+    <!-- Prevention -->
+    <div class="protect">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="titlepage text_align_center">
+              <h2>How to Prevent Anemia</h2>
+              <p>
+                When looking at its layout, the point of using Lorem Ipsum is
+                that it has a more-or-less normal distribution of letters, as
+                opposed to using.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="protect_bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <!-- Demos -->
+              <div class="owl-carousel owl-theme">
+                <div class="item">
+                  <div class="protect_box text_align_center">
+                    <div class="desktop">
+                      <i
+                        ><img src="{% static 'images/pro1.png' %}" alt="#"
+                      /></i>
+                      <h3>Eat Iron-Rich Foods</h3>
+                      <span>
+                        Incorporate iron-rich foods like lean meats, beans, and
+                        fortified cereals into your diet to help prevent iron
+                        deficiency anemia.
+                      </span>
+                    </div>
+                    <a class="read_more" href="{% url 'prevention' %}"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="protect_box text_align_center">
+                    <div class="desktop">
+                      <i
+                        ><img src="{% static 'images/pro2.png' %}" alt="#"
+                      /></i>
+                      <h3>Regular Health Check-ups</h3>
+                      <span>
+                        Schedule regular health check-ups to monitor and manage
+                        potential risk factors for anemia. This helps in early
+                        detection.
+                      </span>
+                    </div>
+                    <a class="read_more" href="{% url 'prevention' %}"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="protect_box text_align_center">
+                    <div class="desktop">
+                      <i
+                        ><img src="{% static 'images/pro3.png' %}" alt="#"
+                      /></i>
+                      <h3>Adequate Vitamin Intake</h3>
+                      <span>
+                        Ensure sufficient intake of vitamins that aid in iron
+                        absorption, such as Vitamin C, to help prevent anemia.
+                      </span>
+                    </div>
+                    <a class="read_more" href="{% url 'prevention' %}"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end Prevention -->
+    <!-- doctors -->
+    <div class="doctors">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="titlepage text_align_center">
+              <h2>What Doctors Say..</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row d_flex">
+          <div class="col-md-6">
+            <div id="ho_efcet" class="reader text_align_center">
+              <i><img src="{% static 'images/doctor1.png' %}" alt="#" /></i>
+              <h3>Dr. Jane Smith</h3>
+              <p>
+                It is crucial to maintain a balanced diet rich in iron and
+                vitamins to prevent anemia. Regular check-ups and early
+                diagnosis are essential for effective management.
+              </p>
+              <span><img src="{% static 'images/do.png' %}" alt="#" /></span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div id="ho_efcet" class="reader text_align_center">
+              <i><img src="{% static 'images/doctor2.png' %}" alt="#" /></i>
+              <h3>Dr. John Doe</h3>
+              <p>
+                Addressing anemia involves understanding its causes and ensuring
+                proper dietary intake. Regular blood tests help in monitoring
+                and preventing complications.
+              </p>
+              <span><img src="{% static 'images/do.png' %}" alt="#" /></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end doctors -->
+    {% include "designs/last.html" %}
+  </body>
+</html>

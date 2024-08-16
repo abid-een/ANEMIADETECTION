@@ -1,0 +1,54 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% include "designs/head.html" %}
+    <title>Doctors</title>
+  </head>
+  <body class="main-layout inner_page">
+    {% include "designs/mid.html" %}
+    <!-- doctors -->
+    <div class="doctors">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="titlepage text_align_center">
+              <h2>What Doctors Say..</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row d_flex">
+          <div class="col-md-6">
+            <div id="ho_efcet" class="reader text_align_center">
+              <i><img src="{% static 'images/doctor1.png' %}" alt="#" /></i>
+              <h3>Dr. Jane Smith</h3>
+              <p>
+                It is crucial to maintain a balanced diet rich in iron and
+                vitamins to prevent anemia. Regular check-ups and early
+                diagnosis are essential for effective management.
+              </p>
+              <span><img src="{% static 'images/do.png' %}" alt="#" /></span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div id="ho_efcet" class="reader text_align_center">
+              <i><img src="{% static 'images/doctor2.png' %}" alt="#" /></i>
+              <h3>Dr. John Doe</h3>
+              <p>
+                Addressing anemia involves understanding its causes and ensuring
+                proper dietary intake. Regular blood tests help in monitoring
+                and preventing complications.
+              </p>
+              <span><img src="{% static 'images/do.png' %}" alt="#" /></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end doctors -->
+    {% include "designs/last.html" %}
+  </body>
+</html>

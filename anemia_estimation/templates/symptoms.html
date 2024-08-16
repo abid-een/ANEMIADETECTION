@@ -1,0 +1,55 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% include "designs/head.html" %}
+    <title>Anemia Symptoms</title>
+  </head>
+  <body class="main-layout inner_page">
+    {% include "designs/mid.html" %}
+    <!-- Symptoms of Anemia -->
+    <div class="coronata">
+      <div class="container">
+        <div class="row d_flex grid">
+          <div class="col-md-7">
+            <div class="coronata_img text_align_center">
+              <figure>
+                <img
+                  src="{% static 'images/anemia_info.png' %}"
+                  alt="Anemia Symptoms"
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="col-md-5 oder1">
+            <div class="titlepage text_align_left">
+              <h2>Symptoms of Anemia</h2>
+              <p>
+                Anemia manifests through various symptoms, which can vary in
+                severity. Identifying these symptoms early can be crucial for
+                effective management and treatment. Common symptoms include:
+              </p>
+              <ul style="margin-bottom: 20px">
+                <li>Persistent fatigue and weakness</li>
+                <li>Unusual paleness of the skin</li>
+                <li>Breathlessness or rapid heartbeat</li>
+                <li>Frequent dizziness or lightheadedness</li>
+                <li>Cold or numb extremities</li>
+                <li>Frequent headaches</li>
+                <li>Chest pain or angina</li>
+                <li>Brittle or spoon-shaped nails</li>
+                <li>Restless legs syndrome</li>
+              </ul>
+              <a class="read_more" href="{% url 'symptoms' %}">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end symptoms -->
+    {% include "designs/last.html" %}
+  </body>
+</html>

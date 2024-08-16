@@ -1,0 +1,109 @@
+<!-- login.html -->
+{%load static%}
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Anemia Estimation</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <style>
+      body.login-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f8f9fa;
+      }
+      .login-container {
+        display: flex;
+        width: 90%;
+        max-width: 1000px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+      .login-image {
+        flex: 1;
+        background: url("{% static 'images/login-image.png' %}") no-repeat
+          center center;
+        background-size: cover;
+      }
+      .login-form {
+        flex: 1;
+        padding: 30px;
+      }
+      h1 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      .form-group {
+        margin-bottom: 20px;
+      }
+      .btn-primary {
+        width: 100%;
+      }
+      .alert {
+        margin-top: 20px;
+      }
+      p {
+        margin-top: 20px;
+        text-align: center;
+      }
+      a {
+        color: #007bff;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body class="login-page">
+    <div class="login-container">
+      <div class="login-image"></div>
+      <div class="login-form">
+        <h1>Login</h1>
+        <form method="POST" action="{% url 'login' %}">
+          {% csrf_token %}
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              class="form-control"
+              required
+              autofocus
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="form-control"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+          {% if messages %}
+          <div class="alert alert-danger mt-3">
+            {% for message in messages %} {{ message }} {% endfor %}
+          </div>
+          {% endif %}
+        </form>
+        <p>
+          Don't have an account?
+          <a href="{% url 'register' %}">Register here</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

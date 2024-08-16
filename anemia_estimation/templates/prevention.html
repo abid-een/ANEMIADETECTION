@@ -1,0 +1,97 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% include "designs/head.html" %}
+    <title>About Anemia</title>
+  </head>
+  <body class="main-layout inner_page">
+    {% include "designs/mid.html" %}
+    <!-- Prevention -->
+    <div class="protect">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="titlepage text_align_center">
+              <h2>How to Prevent Anemia</h2>
+              <p>
+                When looking at its layout, the point of using Lorem Ipsum is
+                that it has a more-or-less normal distribution of letters, as
+                opposed to using.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="protect_bg" style="margin-bottom: 50px">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <!-- Demos -->
+              <div class="owl-carousel owl-theme">
+                <div class="item">
+                  <div class="protect_box text_align_center">
+                    <div class="desktop">
+                      <i
+                        ><img src="{% static 'images/pro1.png' %}" alt="#"
+                      /></i>
+                      <h3>Eat Iron-Rich Foods</h3>
+                      <span>
+                        Incorporate iron-rich foods like lean meats, beans, and
+                        fortified cereals into your diet to help prevent iron
+                        deficiency anemia.
+                      </span>
+                    </div>
+                    <a class="read_more" href="{% url 'prevention' %}"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="protect_box text_align_center">
+                    <div class="desktop">
+                      <i
+                        ><img src="{% static 'images/pro2.png' %}" alt="#"
+                      /></i>
+                      <h3>Regular Health Check-ups</h3>
+                      <span>
+                        Schedule regular health check-ups to monitor and manage
+                        potential risk factors for anemia. This helps in early
+                        detection.
+                      </span>
+                    </div>
+                    <a class="read_more" href="{% url 'prevention' %}"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="protect_box text_align_center">
+                    <div class="desktop">
+                      <i
+                        ><img src="{% static 'images/pro3.png' %}" alt="#"
+                      /></i>
+                      <h3>Adequate Vitamin Intake</h3>
+                      <span>
+                        Ensure sufficient intake of vitamins that aid in iron
+                        absorption, such as Vitamin C, to help prevent anemia.
+                      </span>
+                    </div>
+                    <a class="read_more" href="{% url 'prevention' %}"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end Prevention -->
+    {% include "designs/last.html" %}
+  </body>
+</html>

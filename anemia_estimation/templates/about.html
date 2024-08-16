@@ -1,0 +1,50 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% include "designs/head.html" %}
+    <title>About Anemia</title>
+  </head>
+  <body class="main-layout inner_page">
+    {% include "designs/mid.html" %}
+    <!-- about -->
+    <div class="about">
+      <div class="container_width">
+        <div class="row d_flex">
+          <div class="col-md-7">
+            <div class="titlepage text_align_left">
+              <h2>About Anemia</h2>
+              <p>
+                Anemia is a condition characterized by a lack of healthy red
+                blood cells or hemoglobin, which impairs the body’s ability to
+                transport oxygen to tissues. Symptoms include fatigue, weakness,
+                and shortness of breath.
+              </p>
+              <a
+                class="read_more"
+                href="https://www.who.int/health-topics/anaemia#tab=tab_1"
+                target="_blank"
+                >Learn More</a
+              >
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="about_img text_align_center">
+              <figure>
+                <img
+                  src="{% static 'images/anemia-info.png' %}"
+                  alt="Anemia Awareness"
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end about -->
+    {% include "designs/last.html" %}
+  </body>
+</html>
